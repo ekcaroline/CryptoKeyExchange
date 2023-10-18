@@ -1,0 +1,27 @@
+Testing Primitive Root Check:
+
+Test Case 1: A is a primitive root of q.
+
+a = 2
+q = 5
+
+Test Case 2: A is not a primitive root of q.
+
+a = 3
+q = 7
+
+Testing Public Key and Shared Key Computation:
+
+Test Case 3: Compute public key and shared key with valid inputs.
+
+a = 2
+q = 11
+Xa = 3
+Xb = 5
+
+Test Case 4: Invalid private key (Xa or Xb greater than q).
+
+a = 5
+q = 13
+Xa = 15
+Xb = 8
