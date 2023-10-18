@@ -28,11 +28,11 @@ Follow the on-screen menu to choose your desired functionality (e.g., primitive 
 
 Enjoy secure key exchange and communication!
 
-**Contributors
+Contributors
 Your Name
 Caroline Ek
 
-**Questions and Support
+Questions and Support
 If you have any questions or need support, please open an issue.
 
 I welcome contributions and improvements to this project. Feel free to create pull requests or fork the project.
