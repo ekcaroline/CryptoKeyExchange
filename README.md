@@ -8,8 +8,6 @@ CryptoKeyExchange is a Python program that provides a robust solution for secure
 
 - **Public Key and Session Key Generation:** Compute and exchange public keys and session keys with nonces to prevent man-in-the-middle attacks.
 
-- **Man-in-the-Middle Attack:** Implementation of a man-in-the-middle attack to test out the detection function.
-
 ## Usage
 
 1. Clone this repository:
