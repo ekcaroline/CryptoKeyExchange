@@ -26,9 +26,6 @@ def compute_public_key(a,q,Xa,Xb): #compute public key/session key
   shared_keya = 0
   shared_keyb = 0
 
-  #generate random nonce
-  nonce = secrets.token_hex(16)
-
   #compute public key
   Ya = (a**Xa) % q
   Yb = (a**Xb) % q
@@ -52,11 +49,10 @@ def compute_public_key(a,q,Xa,Xb): #compute public key/session key
   else:
     print("Shared session key is: ", shared_keya)
     print("The shared session key is different for both Alice and Bob.")
+  
 
-#def man_in_middle(a,q,Xa,Xb):
-
-def main():
-  print("\nThis program will compute primitive root and public key/shared session key. Security measures have also been     implemented, so if user wishes to also perform a man-in-the-middle attack, it will detect the attack and display the shared session key.\n ")
+def main(): 
+  print("\nThis program will compute primitive root and public key/shared session key. Security measures have also been implemented\n ")
   print("--------------------------             Menu             ---------------------------------\n")
   
   while True:
@@ -65,13 +61,14 @@ def main():
     print("3. Quit")
     
     choice = int(input("\nWhat would you like to do? \n"))
-  
+
     if choice < 1 or choice > 2:
       return print("Invalid choice. Try again.")
-      
+           
     if choice == 1: #primitive root
       a = int(input("Enter a value of a: "))
       q = int(input("Enter a value for q: "))
+
       is_a_primitive(a,q)
       
     elif choice == 2: #compute primitive root and public key/session key
@@ -80,21 +77,11 @@ def main():
       Xa = int(input("\nLet Person #1 choose a private key: "))
       Xb = int(input("Let Person #2 choose a private key: "))
 
-      if (Xa > q and Xb > q):
-        print("Invalid private key.")
+      if (Xa > q and Xb > q): #checks if 
+        print("Invalid private key. (Xa or Xb greater than q)")
         return 
-  
-      #perform a man-in-the-middle attack
-      attack = input("\n Would you like to perform a secret attack?(Y/N) \n")
-  
-      #if attack == 'Y':
-       # man_in_middle()
-      if attack == 'n' or attack == 'N':
-        compute_public_key(a,q,Xa,Xb)
+      compute_public_key(a,q,Xa,Xb)
         
     elif choice == 3:
       print("Goodbye!")
       break
-
-if __name__ == "__main__":
-    main()
