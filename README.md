@@ -1,6 +1,6 @@
 # CryptoKeyExchange
 
-CryptoKeyExchange is a Python program that provides a robust solution for secure key exchange and communication. This versatile tool enables users to enhance the security of their communication by checking primitive roots, computing and exchanging public keys, and detecting and preventing man-in-the-middle attacks.
+CryptoKeyExchange is a Python program that provides a robust solution for secure key exchange and communication. This versatile tool enables users to enhance the security of their communication by checking primitive roots, and computing and exchanging public keys.
 
 ## Features
 
