@@ -13,7 +13,7 @@ CryptoKeyExchange is a Python program that provides a robust solution for secure
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/CryptoKeyExchange.git
+   git clone https://github.com/ekcaroline/CryptoKeyExchange.git
    cd CryptoKeyExchange
 
    Run the program:
